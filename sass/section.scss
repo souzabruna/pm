@@ -1,0 +1,150 @@
+@import "variables";
+@import "mediaQueries.scss";
+
+.Content {
+	background-color: $primary-color;
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.Footer {
+	background-color: $dark-color;
+	width: 100%;
+	height: 170px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.Container {
+	width: 1140px;
+	min-height: 100vh;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	@include mobile{
+    	width: 100%;
+    }
+}
+
+.Top {
+	width: 100%;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: 20px;
+}
+
+.DateBox {
+	width: 300px;
+	height: 40px;
+	background-color: $secondary-color;
+	border-radius: 22px;
+}
+
+.LargeBox {
+	width: 100%;
+	height: 300px;
+	border-radius: 7px;
+	background-color: $secondary-color;
+}
+
+.SmallBox {
+	width: 32%;
+	height: 300px;
+	border-radius: 7px;
+	background-color: $secondary-color;
+	margin: 20px 0 30px 0;
+}
+
+.TitleBox {
+	width: 300px;
+	height: 40px;
+}
+
+.Center {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 70px;
+}
+
+.btn-large {
+	width: 300px;
+	height: 40px;
+	color: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 22px;
+	cursor: pointer;
+	border: 2px solid #ffffff;
+}
+
+.modal {
+	background-color:rgba(0, 0, 0, 0.5)!important ;
+    content: ' ';
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+    display: none;
+
+    &-body {
+    	width: 100%;
+    	height: 100%;
+    	display: flex;
+    	align-items: center;
+    	justify-content: space-around;
+    }
+
+    &-Content {
+    	top:70px;
+    	width: 700px;
+    	height: 500px;
+    	background-color:#ffffff;
+    }
+
+    &-top {
+    	width: 100%;
+    	height: 70px;
+    	display: flex;
+    	justify-content: space-around;
+    	align-items: center;
+    	background: #1dbb88;
+    }
+
+    &-Title {
+    	width: 70%;
+    	color: #ffffff;
+    }
+
+    &-close {
+    	width: 10%;
+    	display: flex;
+    	align-items: center;
+    	justify-content: flex-end;
+    	color: #ffffff;
+    	font-size: 30px;
+    	cursor: pointer;
+    }
+
+    &-filds-Small {
+    	height: 60px;
+    	display: flex;
+    	flex-direction: column;
+		width: 40%;
+    }
+
+    &-open {
+    	display: block;
+    }
+}
